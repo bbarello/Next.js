@@ -2,7 +2,7 @@
     //  clock time remaining
 
 function initQuiz() {
-      var timeRemaining=0;
+      var timeRemaining = "";
 
 
   // array of questions
@@ -127,7 +127,7 @@ function initQuiz() {
                   rowEl.append(colEl2);
 
                   buttonEl = document.createElement("button");
-                  buttonEl.setAttribute("class","btn btn-primary");
+                  buttonEl.setAttribute("class","btn btn-primary btn-sm");
                   buttonEl.setAttribute("type","button");
                   buttonEl.innerHTML = questions[currentQuestion-1].choices[i];
                   colEl2.append(buttonEl);
@@ -153,7 +153,7 @@ function initQuiz() {
                       if (this.innerHTML === questions[currentQuestion - 1].answer) {
                           parEl.innerHTML = "Correct!";
                       } else {
-                          parEl.innerHTML = "Incorrect";
+                          parEl.innerHTML = "Wrong!";
                           timeRemaining = timeRemaining - 15;
                           if (timeRemaining < 0) {
                               timeRemaining = 0;
