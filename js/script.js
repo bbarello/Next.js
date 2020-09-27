@@ -213,7 +213,7 @@ function initQuiz() {
           finalContainerEl.setAttribute("class","container d-none");
           highscoreContainerEl.setAttribute("class","container");
           var colEl = document.getElementById("highscore-table");
-          for (i=0; i < 10; i++) {
+          for (i=0; i < 8; i++) {
               var rowEl = document.createElement("div");
               rowEl.setAttribute("class","row mb-1");
               colEl.append(rowEl);
