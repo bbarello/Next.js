@@ -12,80 +12,76 @@
     <title>Code Quiz: Javascript</title>
   </head>
   <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-4 col-md-2">
-        <a href type="button" id="highscore-button">High Scores</a> 
-    </div>
-    <div class="col-3 col-md-7"></div>
-    <div class="col-5 col-md-3">
-            <div class="form-group row time">
-                <div class="col-sm-6">
-                  <span class="col-sm-3 col-form-label">Time:</span>
-                    <input id="time-remaining" placeholder="0">
-                </div>
-            </div>
-    
-    </div>
-</div>
-</div>
-</nav>
 
-<div id="landing-container" class="container-sm">
-<div class="row mb-3">
-<div class="col-12 text-center">
-    <h1>Code Quiz</h1>
-</div>
-</div>
-<div class="row mb-3">
-<div class="col-12 text-center">
-    <p>Answer all the questions before the timer runs out!  Each wrong answer will subtract 15 seconds from the timer.  The more time left on the clock when all questions are answered, the higher your score!</p>
-</div>
-</div>
-<div class="row">
-      <div class="col-12 text-center">
-          <button id="start-button" type="button" class="btn btn-sm">Start Quiz</button>
-      </div>
-      </div>
-      </div>
-
-      <div id="quiz-container" class="container d-none">
-
-      </div>
-      <div id="final-container" class="container d-none">
-      <div class="row">
-      <div class="col-12 text-center">
-              <div class="form-group row">
-
-                  <div class="col-sm-5 text-left">
-                    <h2>All Done!</h2>
-                    <label for="final-score" class="col-sm-4 col-form-label">Your Final Score is:</label>
-                      <input type="number" readonly class="form-control" id="final-score" placeholder="0">
-                  </div>
+          <nav class="row mr-0 mb-5">
+              <div class="col pt-1 pl-5">
+                  <button  id="highscore-button">View High Scores</button> 
               </div>
-    
-              <div class="form-group">
-                <label for="initials-entry" class="float-left">Enter Initials:</label>
-                <input type="text" class="form-control float-left" id="initials-entry">
-                <button id="submit-initials" type="button" class="btn btn-sm float-left">Submit</button>
+              <div class="col text-right">
+                        <form>
+                          <label for="time-remaining" class="col-sm-3 col-form-label">Time:</label>                              
+                          <input type="number" readonly class="form-control pl-0 pr" id="time-remaining" placeholder="0">
+                        </form>
               </div>
-         
-      </div>
-      </div>
-      </div>
-      <div id="highscore-container" class="container d-none">
-      <div class="row">
-      <div class="col-2"></div>
-      <div id="highscore-table" class="col-8">
-          <div class="row">
-              <div class="col-12 text-center">
-                  <h2>High Scores</h2>
-              </div>
+            </nav>
+      
+
+  <div id="landing-container" class="container">
+      <div class="row mb-3">
+          <div class="col-12 text-center">
+              <h1>Code Quiz</h1>
           </div>
       </div>
-      <div class="col-2"></div>
+      <div class="row mb-3">
+          <div class="col-12 text-center">
+              <p>Answer all the questions before the timer runs out!  Each wrong answer will subtract 15 seconds from the timer.  The more time left on the clock when all questions are answered, the higher your score!</p>
+          </div>
       </div>
-    </div>
+      <div class="row">
+          <div class="col-12 text-center">
+              <button id="start-button" type="button" class="btn btn-secondary btn-sm">Start Quiz</button>
+          </div>
+      </div>
+  </div>
+
+  <div id="quiz-container" class="container d-none">
+      
+  </div>
+  <div id="final-container" class="container d-none">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="text-left">All Done!</h2>
+
+              <form>
+                  <div class="form-group row">
+                      <div class="col-sm-4 text-left">
+                        <label for="final-score" class="col-sm-3 col-form-label text-left">Final Score:</label>
+                        <input type="number" readonly class="form-control text-left" id="final-score" placeholder="0">
+                      </div>
+                  </div>
+              </form>
+              <form>
+                  <div class="form-group text-left">
+                    <label for="initials-entry text-left">Enter Initials:</label>
+                    <input type="text" class="form-control" id="initials-entry" >
+                    <button id="submit-initials" type="button" class="btn btn-primary btn-sm text-left">Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div id="highscore-container" class="container d-none">
+      <div class="row">
+          <div class="col-2"></div>
+          <div id="highscore-table" class="col-8">
+              <div class="row">
+                  <div class="col-12 text-center">
+                      <h2>High Scores</h2>
+                  </div>
+              </div>
+          </div>
+          <div class="col-2"></div>
+      </div>
   </div>
     <script src="js/script.js"></script>
     <!-- Optional JavaScript -->

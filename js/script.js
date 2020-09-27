@@ -213,16 +213,16 @@ function initQuiz() {
           finalContainerEl.setAttribute("class","container d-none");
           highscoreContainerEl.setAttribute("class","container");
           var colEl = document.getElementById("highscore-table");
-          for (i=0; i<highScores.length; i++) {
-              let rowEl = document.createElement("div");
+          for (i=0; i < 10; i++) {
+              var rowEl = document.createElement("div");
               rowEl.setAttribute("class","row mb-1");
               colEl.append(rowEl);
 
-              let colEl2 = document.createElement("div");
+              var colEl2 = document.createElement("div");
               colEl2.setAttribute("class","col-12 text-center");
               rowEl.append(colEl2);
 
-              let parEl = document.createElement("div");
+              var parEl = document.createElement("div");
               parEl.innerHTML = "Initials: " + highScores[i].initials + "   Score: " + highScores[i].highScore;
               colEl2.append(parEl);
           }

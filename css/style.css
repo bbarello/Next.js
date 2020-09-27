@@ -20,10 +20,12 @@ label{
     color:#fff;
     background-color: #483d8b;
     border-color: #483d8b ;
+    outline:none;
 }
 .btn-primary:hover {
     background-color: #483d8b;
     border-color: #483d8b ;
+    outline:none;
 }
 
 .btn-primary:focus{
@@ -52,9 +54,17 @@ padding:0;
     margin-left:15px;
 }
 #time-remaining{
-    width:30px;
+    width:35px;
     border:0;
+    background-color:#fff;
     display:inline-block
+}
+#highscore-button{
+    background-color: #fff;
+    border:0;
+    outline:0;
+    color: #4b0082;
+    font-weight:500;
 }
 #final-score{
     border:0;
