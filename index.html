@@ -15,13 +15,13 @@
     
   <!-- header section -->
 <header class="row mr-0 mb-5">
-   <div class="col pt-1 pl-5">
+   <div class="col pt-2">
       <button  id="highscore-button">View High Scores</button> 
   </div>
-   <div class="col text-right">
+   <div class="col text-right mr-n3">
      <form>
       <label for="time-remaining" class="col-sm-3 col-form-label">Time:</label>          
-      <input type="number" readonly class="form-control pl-0 pr" id="time-remaining" placeholder="0">
+      <input type="number" readonly class="form-control pl-0 mr-n2" id="time-remaining" placeholder="0">
      </form>
     </div>                          
                      
@@ -55,14 +55,14 @@
   <section id="final-container" class="container d-none">
       <div class="row">
         <div class="col-2"></div>
-          <div class="col-10">
+          <div class="col-md-10">
             <h2 class="text-left">All Done!</h2>
 
               <form>
                   <div class="form-group row">
                       <div class="col-sm-4 text-left">
                         <label for="final-score" class="col-sm-4 col-form-label text-left">Final Score:</label>
-                        <input type="number" readonly class="form-control text-left ml-n3" id="final-score" placeholder="0">
+                        <input type="number" readonly class="form-control text-left" id="final-score" placeholder="0">
                       </div>
                   </div>
               </form>
@@ -85,7 +85,6 @@
                 <h2 class="ml-3 mb-4">High Scores</h2>
                 <!-- high scores data-->
                   <div id="highscore-table" class="col-12 text-left mb-2">
-                  
                   </div>
               </div>
           </div>
