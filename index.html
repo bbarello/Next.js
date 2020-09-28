@@ -12,7 +12,7 @@
     <title>Code Quiz: Javascript</title>
   </head>
   <body>
-  
+    
   <!-- header section -->
 <header class="row mr-0 mb-5">
    <div class="col pt-1 pl-5">
@@ -54,14 +54,15 @@
   <!-- all quiz final results section-->
   <section id="final-container" class="container d-none">
       <div class="row">
-          <div class="col-12 text-center">
+        <div class="col-2"></div>
+          <div class="col-10">
             <h2 class="text-left">All Done!</h2>
 
               <form>
                   <div class="form-group row">
                       <div class="col-sm-4 text-left">
-                        <label for="final-score" class="col-sm-3 col-form-label text-left">Final Score:</label>
-                        <input type="number" readonly class="form-control text-left" id="final-score" placeholder="0">
+                        <label for="final-score" class="col-sm-4 col-form-label text-left">Final Score:</label>
+                        <input type="number" readonly class="form-control text-left ml-n3" id="final-score" placeholder="0">
                       </div>
                   </div>
               </form>
@@ -79,21 +80,29 @@
   <section id="highscore-container" class="container d-none">
       <div class="row">
           <div class="col-2"></div>
-          <div id="highscore-table" class="col-8">
+          <div  class="col-8 text-left">
               <div class="row">
-                  <div class="col-12 text-center">
-                      <h2>High Scores</h2>
+                <h2 class="ml-3 mb-4">High Scores</h2>
+                <!-- high scores data-->
+                  <div id="highscore-table" class="col-12 text-left mb-2">
+                  
                   </div>
               </div>
           </div>
+        </div>
+        <div class="row">
           <div class="col-2"></div>
+
+          <div class="col-md-3 mt-4"><input type="button" value="Go Back" class="btn btn-sm" onClick="history.go(-1);">  <input id ="clear" type="button" value="Clear High Scores" class="btn btn-sm"  onclick="clearScores()"> 
+          </div>
         </div>
   </section>
-    <script src="js/script.js"></script>
+     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

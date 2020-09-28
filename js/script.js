@@ -1,8 +1,15 @@
 
-    //  clock time remaining
+
+// clears high scores
+function clearScores() {
+    var obj = document.getElementById("highscore-table");
+    obj.remove();
+  }
 
 function initQuiz() {
-      var timeRemaining = "";
+
+    // remaining clock time
+    var timeRemaining = "";
 
 
   // array of questions
@@ -213,27 +220,20 @@ function initQuiz() {
           finalContainerEl.setAttribute("class","container d-none");
           highscoreContainerEl.setAttribute("class","container");
           var colEl = document.getElementById("highscore-table");
-          for (i=0; i < 8; i++) {
+          for (i=0; i < highScores.length; i++) {
               var rowEl = document.createElement("div");
               rowEl.setAttribute("class","row mb-1");
               colEl.append(rowEl);
 
               var colEl2 = document.createElement("div");
-              colEl2.setAttribute("class","col-12 text-center");
+              colEl2.setAttribute("class","col-12 text-left pl-3");
               rowEl.append(colEl2);
 
               var parEl = document.createElement("div");
               parEl.innerHTML = "Initials: " + highScores[i].initials + "   Score: " + highScores[i].highScore;
               colEl2.append(parEl);
           }
-      });
-  
-      
-  
-  
-  
-  
-  
+      }); 
   
   }
   
