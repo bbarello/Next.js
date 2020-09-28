@@ -223,15 +223,15 @@ function initQuiz() {
           for (i=0; i < highScores.length; i++) {
               var rowEl = document.createElement("div");
               rowEl.setAttribute("class","row mb-1");
-              colEl.append(rowEl);
+              colEl.prepend(rowEl);
 
               var colEl2 = document.createElement("div");
               colEl2.setAttribute("class","col-12 text-left pl-3");
-              rowEl.append(colEl2);
+              rowEl.prepend(colEl2);
 
               var parEl = document.createElement("div");
               parEl.innerHTML = "Initials: " + highScores[i].initials + "   Score: " + highScores[i].highScore;
-              colEl2.append(parEl);
+              colEl2.prepend(parEl);
           }
       }); 
   
