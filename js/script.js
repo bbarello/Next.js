@@ -53,6 +53,7 @@ function initQuiz() {
       var finalContainerEl = document.getElementById("final-container");
       var submitButtonEl = document.getElementById("submit-initials");
       var highscoreButtonEl = document.getElementById("highscore-button");
+      //var highscoreButtonEl = document.getElementById("submit-hightscore");
       var highscoreContainerEl = document.getElementById("highscore-container");
       var  highScores = [];
           //  Method to store and retrieve arrays in/from local storage obtained from https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage

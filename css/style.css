@@ -1,15 +1,24 @@
-// Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px)  and (min-width: 320px) {
-    .col-2 {
-        display:none;
-    }
-
+    
     #highscore-button{
         width:!important;
     }
 
     .pl-5{
         padding-left:0!important;
+    }
+
+    #bottom-button{
+        margin-left:16%!important;
+        margin-bottom:10%;
+    }
+
+    #quiz-container{
+        padding-left:10%;
+    }
+    
+    #time-remaining {
+        margin-right:1%!important;
     }
  }
 
