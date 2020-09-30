@@ -236,7 +236,7 @@ function initQuiz() {
               rowEl.prepend(colEl2);
 
               var parEl = document.createElement("div");
-              parEl.innerHTML = "Initials: " + highScores[i].initials + "   Score: " + highScores[i].highScore;
+              parEl.innerHTML = highScores[i].initials.toUpperCase() + " - " + highScores[i].highScore;
               colEl2.prepend(parEl);
           }
       }); 
