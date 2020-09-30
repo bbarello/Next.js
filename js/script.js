@@ -52,15 +52,15 @@ function initQuiz() {
       var quizContainerEl = document.getElementById("quiz-container");
       var finalContainerEl = document.getElementById("final-container");
       var submitButtonEl = document.getElementById("submit-initials");
-      var highscoreButtonEl = document.getElementById("highscore-button");
-      //var highscoreButtonEl = document.getElementById("submit-hightscore");
+      var highscoreButtonEl = document.querySelectorAll(".highscore-page").length;
+      //var highscoreButtonEl = document.getElementById("submit-highscore");
       var highscoreContainerEl = document.getElementById("highscore-container");
       var  highScores = [];
           //  Method to store and retrieve arrays in/from local storage obtained from https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
       if (JSON.parse(localStorage.getItem('scores')) !== null) {
           highScores = JSON.parse(localStorage.getItem("scores"));
       }
-  
+      console.log(highscoreButtonEl)
       function startQuiz() {
           
           
@@ -215,12 +215,17 @@ function initQuiz() {
 
       startButtonEl.addEventListener("click",startQuiz);
 
-      highscoreButtonEl.addEventListener("click",function() {
+
+    // for loop to take user to high score when class highscore-page is clicked
+    for (var i = 0; i < highscoreButtonEl; i++){
+         // function to load high score table
+        document.querySelectorAll(".highscore-page")[i].addEventListener("click",function() {
           landingContainerEl.setAttribute("class","container d-none");
           quizContainerEl.setAttribute("class","container d-none");
           finalContainerEl.setAttribute("class","container d-none");
           highscoreContainerEl.setAttribute("class","container");
           var colEl = document.getElementById("highscore-table");
+
           for (i=0; i < highScores.length; i++) {
               var rowEl = document.createElement("div");
               rowEl.setAttribute("class","row mb-1");
@@ -235,7 +240,7 @@ function initQuiz() {
               colEl2.prepend(parEl);
           }
       }); 
-  
+    }
   }
   
 initQuiz();
